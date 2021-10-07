@@ -1,0 +1,24 @@
+package clases;
+
+import java.awt.EventQueue;
+
+import graficos.VentanaPrincipal;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					VentanaPrincipal frame = new VentanaPrincipal();
+					//frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+
+	}// fin main
+
+}// fin principal
